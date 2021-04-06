@@ -36,6 +36,8 @@ fclean:			clean
 				$(RM) -f $(NAME)
 				$(RM) -f src/*.gcda
 				$(RM) -f src/*.gcno
+				$(RM) -f tools/*.gcda
+				$(RM) -f tools/*.gcno
 				$(MAKE) fclean -C tests/
 
 re:				fclean all
